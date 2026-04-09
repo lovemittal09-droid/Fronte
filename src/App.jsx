@@ -448,7 +448,7 @@ function App() {
 
       <section className="platform-section" style={{paddingBottom: "0rem"}}>
         <div className="platform-inner" style={{paddingTop: "5rem"}}>
-          <img className="phone-showcase-image" src="https://cdn.prod.website-files.com/676fc1b20e9771077431aa16/6870b389b5ea7c47268ca946_Home%20Agent%20Automation.png" alt="" />
+          <img className="phone-showcase-image" src={handPhoneImage} alt="" />
 
           <div className="platform-copy">
             <h2>Everything on One Unified Platform</h2>
@@ -499,7 +499,7 @@ function App() {
             </div>
 
             <div className="analytics-visual" aria-hidden="true">
-              <img class="phone-showcase-image" src="/src/assets/audio_image.png" alt=""/>
+              <img class="phone-showcase-image" src="https://cdn.prod.website-files.com/676fc1b20e9771077431aa16/6870b389b5ea7c47268ca946_Home%20Agent%20Automation.png" alt=""/>
             </div>
           </div>
         </div>
@@ -560,7 +560,7 @@ function App() {
           {articles.map((article) => (
             <article key={article.title} className="article-card">
               <div className={`article-art ${article.art}`}>
-                <img class="phone-showcase-image" src="https://cdn.prod.website-files.com/676fc1b20e9771077431a9e9/684ff09e0d74b0081c4dbee6_Your%20paragraph%20text%20(3)%20(1)-p-1600.png" alt=""/>
+                <img class="phone-showcase-image" src="/src/assets/smart.png" alt=""/>
               </div>
               <div className="article-copy">
                 <h3>{article.title}</h3>
