@@ -679,8 +679,8 @@ function App() {
             </div>
 
             <div className="footer-badges">
-              <img class="footer-badge" src="/src/assets/iso.png" alt=""/>
-              <img class="footer-badge" src="/src/assets/soc.png" alt=""/>
+              <img class="footer-badge" src="https://cdn.prod.website-files.com/676fc1b20e9771077431aa16/68aef25697d71a40c7bf32cb_ISO%2027001%20(1)-p-500.png" alt=""/>
+              <img class="footer-badge" src="https://cdn.prod.website-files.com/676fc1b20e9771077431aa16/68aef287032626f20f3b1839_SOC%202%20(1)-p-500.png" alt=""/>
             </div>
           </div>
 
