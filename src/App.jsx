@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
+import darwixLogo from './assets/Darwixh.png'
+import handPhoneImage from './assets/hand_phone.png'
 
 const navItems = [
   'Home',
@@ -276,14 +278,7 @@ function App() {
     <div className="page-shell">
       <header className="topbar">
         <div className="brand">
-          <div className="brand-mark">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
+          <img className="brand-mark" src={darwixLogo} alt="Darwix AI logo" />
           <div className="brand-name">Darwix AI</div>
         </div>
 
@@ -380,7 +375,7 @@ function App() {
       </main>
 
       <section className="trust-strip">
-        <h2>Trusted by Top Enterprises Globally</h2>
+        <h2><div style={{fontSize:"40px"}}>Trusted by Top Enterprises Globally</div></h2>
         <div className="logo-row">
           {logos.map((logo) => (
             <div key={logo} className="logo-pill">
@@ -391,7 +386,7 @@ function App() {
       </section>
 
       <section className="enterprise-section">
-        <div className="enterprise-backdrop" aria-hidden="true" />
+        
         <h2 className="section-heading">
           Empower Your Revenue Teams to Close Faster,
           <br />
@@ -447,57 +442,13 @@ function App() {
         </div>
 
         <div className="phone-showcase" aria-hidden="true">
-          <div className="phone-hand" />
-          <div className="phone-frame">
-            <div className="phone-notch" />
-            <div className="phone-app">
-              <div className="phone-header">Darwix AI</div>
-              <div className="phone-chart line" />
-              <div className="phone-chart donut" />
-              <div className="phone-stats">
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
-              <div className="phone-bars">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
-            </div>
-          </div>
+          <div></div>
         </div>
       </section>
 
-      <section className="platform-section">
-        <div className="platform-inner">
-          <div className="platform-visual" aria-hidden="true">
-            <div className="platform-hand" />
-            <div className="platform-phone">
-              <div className="phone-notch" />
-              <div className="phone-app">
-                <div className="phone-header">Darwix AI</div>
-                <div className="phone-chart line" />
-                <div className="phone-chart donut" />
-                <div className="phone-stats">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-                <div className="phone-bars">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-              </div>
-            </div>
-          </div>
+      <section className="platform-section" style={{paddingBottom: "0rem"}}>
+        <div className="platform-inner" style={{paddingTop: "5rem"}}>
+          <img className="phone-showcase-image" src={handPhoneImage} alt="" />
 
           <div className="platform-copy">
             <h2>Everything on One Unified Platform</h2>
@@ -548,38 +499,7 @@ function App() {
             </div>
 
             <div className="analytics-visual" aria-hidden="true">
-              <div className="dashboard-card tall">
-                <div className="dashboard-top">
-                  <div className="dashboard-logo">Darwix AI</div>
-                </div>
-                <div className="dashboard-graph">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-                <div className="dashboard-chat">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-              </div>
-
-              <div className="dashboard-card wide">
-                <div className="insight-grid">
-                  <div className="insight-box green" />
-                  <div className="insight-box orange" />
-                </div>
-                <div className="insight-list">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-              </div>
+              <img class="phone-showcase-image" src="/src/assets/audio_image.png" alt=""/>
             </div>
           </div>
         </div>
@@ -640,10 +560,7 @@ function App() {
           {articles.map((article) => (
             <article key={article.title} className="article-card">
               <div className={`article-art ${article.art}`}>
-                <div className="art-paper" />
-                <div className="art-accent one" />
-                <div className="art-accent two" />
-                <div className="art-accent three" />
+                <img class="phone-showcase-image" src="/src/assets/smart.png" alt=""/>
               </div>
               <div className="article-copy">
                 <h3>{article.title}</h3>
@@ -699,7 +616,7 @@ function App() {
         </div>
       </section>
 
-      <section className="press-section">
+      <section className="press-section" style={{paddingTop:"2rem"}}>
         <h2>We&apos;ve been in the News!</h2>
         <div className="press-row">
           {pressLogos.map((logo, index) => (
@@ -738,14 +655,7 @@ function App() {
         <div className="footer-main">
           <div className="footer-brand-block">
             <div className="brand footer-brand">
-              <div className="brand-mark">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
+              <img className="brand-mark" src={darwixLogo} alt="Darwix AI logo" />
               <div className="brand-name">Darwix AI</div>
             </div>
 
@@ -764,17 +674,13 @@ function App() {
 
               <div className="footer-contact-item">
                 <span className="footer-icon">✉</span>
-                <a href="mailto:transform@darwix.ai">transform@darwix.ai</a>
+                <a href="mailto:hr@darwix.co.in">transform@darwix.co.in</a>
               </div>
             </div>
 
             <div className="footer-badges">
-              <div className="footer-badge">
-                <span>ISO 27001</span>
-              </div>
-              <div className="footer-badge">
-                <span>SOC 2</span>
-              </div>
+              <img class="footer-badge" src="/src/assets/iso.png" alt=""/>
+              <img class="footer-badge" src="/src/assets/soc.png" alt=""/>
             </div>
           </div>
 

@@ -59,26 +59,12 @@ a {
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
-  position: relative;
+  width: 58px;
+  height: 58px;
+  display: block;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
-
-.brand-mark span {
-  position: absolute;
-  inset: 0;
-  border: 2px solid rgba(108, 115, 255, 0.9);
-  border-radius: 50%;
-  clip-path: polygon(0 0, 100% 0, 58% 50%, 100% 100%, 0 100%);
-  transform-origin: center;
-}
-
-.brand-mark span:nth-child(1) { transform: rotate(0deg); }
-.brand-mark span:nth-child(2) { transform: rotate(30deg); }
-.brand-mark span:nth-child(3) { transform: rotate(60deg); }
-.brand-mark span:nth-child(4) { transform: rotate(90deg); }
-.brand-mark span:nth-child(5) { transform: rotate(120deg); }
-.brand-mark span:nth-child(6) { transform: rotate(150deg); }
 
 .brand-name {
   font-size: 2rem;
@@ -403,7 +389,7 @@ a {
 }
 
 .trust-strip {
-  padding: 22px 28px 26px;
+  padding: 36px 28px 36px;
   background: rgba(104, 116, 234, 0.82);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -585,8 +571,14 @@ a {
 .phone-showcase {
   position: relative;
   z-index: 2;
-  width: 250px;
+  width: 320px;
   margin: -42px 0 0 190px;
+}
+
+.phone-showcase-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .phone-hand,
@@ -1558,6 +1550,11 @@ a {
   margin-bottom: 44px;
 }
 
+.footer-brand .brand-mark {
+  width: 64px;
+  height: 64px;
+}
+
 .footer-contact-list {
   display: flex;
   flex-direction: column;
@@ -1879,7 +1876,7 @@ a {
   }
 
   .phone-showcase {
-    width: 190px;
+    width: 220px;
     margin-left: auto;
     margin-right: auto;
   }
